@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="245.311">
+<testcase classname="Customer Registration" name="User could register with valid data" time="18.262">
+<system-out><![CDATA[Given user go to register page..............................................passed
+Then user select gender type................................................passed
+And user enter first name "Example1" and last name "Example2"...............passed
+Then user enter date of birth...............................................passed
+Then user enter email "1test251@example.com" field and company name and check options.passed
+And user enter Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+Then user clicks on register button.........................................passed
+Then success message is displayed in Screen.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could add different products to Wishlist" name="Logged user could add different products to Wishlist" time="20.257">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user select Apparel and go to sub category Shoes......................passed
+Then user select color red from CheckBox....................................passed
+Then user select size and color.............................................passed
+Then user add item to Wishlist..............................................failed
+Then user select Computers and go to sub category Software..................skipped
+And user select Windows-8-Pro and added to Wishlist.........................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D10_Wish.userAddItemToWishlist(D10_Wish.java:22)
+	at ✽.user add item to Wishlist(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F110-Wishlist.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="Logged user could add different products to compare list" name="Logged user could add different products to compare list" time="15.245">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user go to Electronics category.......................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobile to compare list........................................failed
+Then user go to Electronics category........................................skipped
+And user select Cell phones Subcategory.....................................skipped
+Then user select Mobile HTC One Mini Blue...................................skipped
+Then user go to Compare Page................................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D11_Compare.userAddMobileToCompareList(D11_Compare.java:22)
+	at ✽.user add mobile to compare list(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F111-Compare%20.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="Logged user could Create Successful Order" name="Logged user can Create successful Order" time="19.491">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Then user go to Electronics category........................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobiles to Quantity...........................................passed
+Then user add mobile to Shopping cart.......................................failed
+Then user select Apparel and go to sub category Shoes.......................skipped
+Then user select color red from CheckBox....................................skipped
+Then filter option view results.............................................skipped
+And user add item to Shopping cart..........................................skipped
+And user go to Shopping Cart page...........................................skipped
+Then user update Shopping cart Quantity.....................................skipped
+Then user check Agree Box and press CheckOut................................skipped
+Then user fill shipping form................................................skipped
+When User Check Out Order Successfully......................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D9_Shoping.userAddMobileToShoppingCart(D9_Shoping.java:70)
+	at ✽.user add mobile to Shopping cart(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F112-SuccessfulOrder.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="Customer Login to Page" name="User could log in with valid email and password" time="17.685">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Then Screen Navigate to home page...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Could Rest Password" name="User could reset his/her password successfully" time="13.364">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user clicks on Forget password Link....................................passed
+Then user enter email "1test251@example.com"................................passed
+When user clicks on Recover button..........................................passed
+Then Success massage appears in green on screen.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="View Products, Product Search" name="Logged User could search for any product" time="10.652">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user search for items in search box For "computer"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="View Products, Product Search" name="Logged User could search for any product 2" time="10.833">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user search for items in search box For "MacBook".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="View Products, Product Search" name="Logged User could search for any product 3" time="11.249">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user search for items in search box For "Jeans".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Change Products Currencies" name="Logged User could switch between currencies US-Euro" time="11.672">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user clicks on currencies list and select euro........................passed
+Then user can see € sign in products........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could Select different Categories" name="Logged user could select different Categories" time="27.323">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user select different category tabs...................................passed
+Then user select Computers and go to sub category Software..................passed
+When user clicks on currencies list and select euro.........................passed
+Then user can see € sign in products........................................passed
+And user select Windows-8-Pro...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could Filter with color" name="Logged user could filter with color" time="13.374">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user select Apparel and go to sub category Shoes......................passed
+Then user select color red from CheckBox....................................passed
+Then filter option view results.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could Select different Tags" name="Logged user could select different tags" time="16.202">
+<system-out><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user select category Apparel..........................................passed
+Then user select tag name from list.........................................passed
+And user could select another tag...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could (Add Product/s, Update Quantity, Remove Product)" name="Logged user could add different products to Shopping cart" time="19.676">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user select Apparel and go to sub category Shoes......................passed
+Then user select color red from CheckBox....................................passed
+Then filter option view results.............................................passed
+And user add item to Shopping cart..........................................failed
+Then user go to Electronics category........................................skipped
+And user select Cell phones Subcategory.....................................skipped
+Then user select Mobile HTC One M-8.........................................skipped
+Then user add mobiles to Quantity...........................................skipped
+Then user add mobile to Shopping cart.......................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D9_Shoping.addItemsToShop(D9_Shoping.java:28)
+	at ✽.user add item to Shopping cart(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F19-ShoppingCart.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="Logged user could (Add Product/s, Update Quantity, Remove Product)" name="Logged user could Update Quantity, Remove Product" time="19.522">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user go to login page.................................................passed
+Then user enter email "1test251@example.com" and Password "P@ssw0rd"........passed
+When user clicks on login button............................................passed
+Given user go to Electronics category.......................................passed
+And user select Cell phones Subcategory.....................................passed
+Then user select Mobile HTC One M-8.........................................passed
+Then user add mobiles to Quantity...........................................passed
+Then user add mobile to Shopping cart.......................................failed
+Then user select Apparel and go to sub category Shoes.......................skipped
+Then user select color red from CheckBox....................................skipped
+Then filter option view results.............................................skipped
+And user add item to Shopping cart..........................................skipped
+And user go to Shopping Cart page...........................................skipped
+Then user update Shopping cart Quantity.....................................skipped
+And user remove one of items from cart......................................skipped
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.D9_Shoping.userAddMobileToShoppingCart(D9_Shoping.java:70)
+	at ✽.user add mobile to Shopping cart(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F19-ShoppingCart.feature:27)
+]]></failure>
+</testcase>
+</testsuite>

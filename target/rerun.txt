@@ -1,0 +1,4 @@
+file:src/main/resources/features/F112-SuccessfulOrder.feature:9
+file:src/main/resources/features/F111-Compare%20.feature:12
+file:src/main/resources/features/F19-ShoppingCart.feature:10:22
+file:src/main/resources/features/F110-Wishlist.feature:10

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="0" total="15" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="245934" started-at="2022-12-14T13:42:21 EET" finished-at="2022-12-14T13:46:27 EET">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="245934" started-at="2022-12-14T13:42:21 EET" finished-at="2022-12-14T13:46:27 EET">
+      <class name="org.example.testRunner.runners">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="setUpClass" is-config="true" duration-ms="578" started-at="2022-12-14T13:42:21 EET" finished-at="2022-12-14T13:42:21 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@25218a4d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="18363" started-at="2022-12-14T13:42:21 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:42:40 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User could register with valid data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="20293" started-at="2022-12-14T13:42:40 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:43:00 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could add different products to Wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logged user could add different products to Wishlist"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefs.D10_Wish.userAddItemToWishlist(D10_Wish.java:22)
+at ✽.user add item to Wishlist(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F110-Wishlist.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="15271" started-at="2022-12-14T13:43:00 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:43:15 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could add different products to compare list"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logged user could add different products to compare list"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefs.D11_Compare.userAddMobileToCompareList(D11_Compare.java:22)
+at ✽.user add mobile to compare list(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F111-Compare%20.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="19531" started-at="2022-12-14T13:43:15 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:43:35 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user can Create successful Order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logged user could Create Successful Order"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefs.D9_Shoping.userAddMobileToShoppingCart(D9_Shoping.java:70)
+at ✽.user add mobile to Shopping cart(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F112-SuccessfulOrder.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="17693" started-at="2022-12-14T13:43:35 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:43:53 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User could log in with valid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Login to Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="13374" started-at="2022-12-14T13:43:53 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:44:06 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User could reset his/her password successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Customer Could Rest Password"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="10673" started-at="2022-12-14T13:44:06 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:44:17 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged User could search for any product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["View Products, Product Search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="10863" started-at="2022-12-14T13:44:17 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:44:28 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged User could search for any product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["View Products, Product Search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="11268" started-at="2022-12-14T13:44:28 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:44:39 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged User could search for any product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["View Products, Product Search"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="11687" started-at="2022-12-14T13:44:39 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:44:51 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged User could switch between currencies US-Euro"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Change Products Currencies"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="27337" started-at="2022-12-14T13:44:51 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:45:18 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could select different Categories"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User could Select different Categories"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="13380" started-at="2022-12-14T13:45:18 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:45:31 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could filter with color"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User could Filter with color"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="16211" started-at="2022-12-14T13:45:31 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:45:47 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could select different tags"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logged user could Select different Tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="19692" started-at="2022-12-14T13:45:47 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:46:07 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could add different products to Shopping cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logged user could (Add Product/s, Update Quantity, Remove Product)"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefs.D9_Shoping.addItemsToShop(D9_Shoping.java:28)
+at ✽.user add item to Shopping cart(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F19-ShoppingCart.feature:14)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="runScenario" duration-ms="19534" started-at="2022-12-14T13:46:07 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-14T13:46:27 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could Update Quantity, Remove Product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Logged user could (Add Product/s, Update Quantity, Remove Product)"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at org.example.stepDefs.D9_Shoping.userAddMobileToShoppingCart(D9_Shoping.java:70)
+at ✽.user add mobile to Shopping cart(file:///C:/Users/DELL/Desktop/demonopcommerceProject112/src/main/resources/features/F19-ShoppingCart.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.example.testRunner.runners@42f93a98]" name="tearDownClass" is-config="true" duration-ms="123" started-at="2022-12-14T13:46:27 EET" finished-at="2022-12-14T13:46:27 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.testRunner.runners -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
